@@ -1,0 +1,278 @@
+%CMF
+# %PSECTS Section
+# For each object file, details of its psects are enumerated here.
+# The begining of the section is indicated by %PSECTS.  The first
+# line indicates the name of the first object file, e.g.
+#    $foo.obj
+# Each line that follows describes a psect in that object file, until
+# the next object file.  The lines that describe a psect have the
+# format:
+#    <psect name> <class name> <space> <link address> <load addresses> <length> <delta> <reloc>
+# All addresses and the length are given in unqualified hexadecimal
+# in delta units.  Any other numeric values are decimal.
+%PSECTS
+$build/default/production/PostLab06.o
+RESVECT CODE 0 0 0 3 2 1
+CODE - 0 0 0 213 2 1
+INTVECT CODE 0 0 0 1E 2 1
+udata_bank0 BANK0 1 20 20 6 1 1
+udata_shr COMMON 1 70 70 2 1 1
+config CONFIG 4 2007 2007 2 2 1
+# %UNUSED Section
+# This section enumerates the unused ranges of each CLASS. Each entry
+# is described on a single line as follows:
+#    <class name> <range> <delta>
+# Addresses given in the range are in hexadecimal and units of delta.
+%UNUSED
+RAM 26-6F 1
+RAM A0-EF 1
+RAM 110-16F 1
+RAM 190-1EF 1
+BANK0 26-6F 1
+BANK1 A0-EF 1
+BANK2 110-16F 1
+BANK3 190-1EF 1
+CONST 213-1FFF 2
+ENTRY 213-1FFF 2
+IDLOC 2000-2003 2
+CODE 213-1FFF 2
+COMMON 72-7F 1
+EEDATA 2100-21FF 2
+STRCODE 213-1FFF 2
+STRING 213-1FFF 2
+# %LINETAB Section
+# This section enumerates the file/line to address mappings.
+# The beginning of the section is indicated by %LINETAB.
+# The first line indicates the name of the first object file, e.g.
+#   $foo.obj
+# Each line that follows describes a single mapping until the next
+# object file.  Mappings have the following format:
+#    <address> <psect name> <class name> ><line number>:<file name>
+# The address is absolute and given given in unqualified hex 
+# in delta units of the psect. All mappings within an object file
+# are in ascending order of addresses.
+# All other numeric values are in decimal.
+%LINETAB
+$build/default/production/PostLab06.o
+0 CODE ABS >103:C:\Users\Personal\Desktop\Labs micros\PostLab06.X\PostLab06.s
+80 CODE ABS >105:C:\Users\Personal\Desktop\Labs micros\PostLab06.X\PostLab06.s
+81 CODE ABS >106:C:\Users\Personal\Desktop\Labs micros\PostLab06.X\PostLab06.s
+82 CODE ABS >107:C:\Users\Personal\Desktop\Labs micros\PostLab06.X\PostLab06.s
+83 CODE ABS >108:C:\Users\Personal\Desktop\Labs micros\PostLab06.X\PostLab06.s
+84 CODE ABS >109:C:\Users\Personal\Desktop\Labs micros\PostLab06.X\PostLab06.s
+85 CODE ABS >113:C:\Users\Personal\Desktop\Labs micros\PostLab06.X\PostLab06.s
+86 CODE ABS >114:C:\Users\Personal\Desktop\Labs micros\PostLab06.X\PostLab06.s
+87 CODE ABS >115:C:\Users\Personal\Desktop\Labs micros\PostLab06.X\PostLab06.s
+88 CODE ABS >119:C:\Users\Personal\Desktop\Labs micros\PostLab06.X\PostLab06.s
+8A CODE ABS >120:C:\Users\Personal\Desktop\Labs micros\PostLab06.X\PostLab06.s
+8B CODE ABS >121:C:\Users\Personal\Desktop\Labs micros\PostLab06.X\PostLab06.s
+8C CODE ABS >122:C:\Users\Personal\Desktop\Labs micros\PostLab06.X\PostLab06.s
+8E CODE ABS >123:C:\Users\Personal\Desktop\Labs micros\PostLab06.X\PostLab06.s
+8F CODE ABS >124:C:\Users\Personal\Desktop\Labs micros\PostLab06.X\PostLab06.s
+90 CODE ABS >125:C:\Users\Personal\Desktop\Labs micros\PostLab06.X\PostLab06.s
+91 CODE ABS >127:C:\Users\Personal\Desktop\Labs micros\PostLab06.X\PostLab06.s
+93 CODE ABS >128:C:\Users\Personal\Desktop\Labs micros\PostLab06.X\PostLab06.s
+94 CODE ABS >129:C:\Users\Personal\Desktop\Labs micros\PostLab06.X\PostLab06.s
+95 CODE ABS >130:C:\Users\Personal\Desktop\Labs micros\PostLab06.X\PostLab06.s
+96 CODE ABS >131:C:\Users\Personal\Desktop\Labs micros\PostLab06.X\PostLab06.s
+97 CODE ABS >132:C:\Users\Personal\Desktop\Labs micros\PostLab06.X\PostLab06.s
+98 CODE ABS >135:C:\Users\Personal\Desktop\Labs micros\PostLab06.X\PostLab06.s
+9A CODE ABS >136:C:\Users\Personal\Desktop\Labs micros\PostLab06.X\PostLab06.s
+9B CODE ABS >137:C:\Users\Personal\Desktop\Labs micros\PostLab06.X\PostLab06.s
+9C CODE ABS >138:C:\Users\Personal\Desktop\Labs micros\PostLab06.X\PostLab06.s
+9D CODE ABS >139:C:\Users\Personal\Desktop\Labs micros\PostLab06.X\PostLab06.s
+9E CODE ABS >140:C:\Users\Personal\Desktop\Labs micros\PostLab06.X\PostLab06.s
+9F CODE ABS >143:C:\Users\Personal\Desktop\Labs micros\PostLab06.X\PostLab06.s
+A1 CODE ABS >144:C:\Users\Personal\Desktop\Labs micros\PostLab06.X\PostLab06.s
+A2 CODE ABS >145:C:\Users\Personal\Desktop\Labs micros\PostLab06.X\PostLab06.s
+A3 CODE ABS >146:C:\Users\Personal\Desktop\Labs micros\PostLab06.X\PostLab06.s
+A4 CODE ABS >147:C:\Users\Personal\Desktop\Labs micros\PostLab06.X\PostLab06.s
+A5 CODE ABS >148:C:\Users\Personal\Desktop\Labs micros\PostLab06.X\PostLab06.s
+A6 CODE ABS >149:C:\Users\Personal\Desktop\Labs micros\PostLab06.X\PostLab06.s
+A8 CODE ABS >149:C:\Users\Personal\Desktop\Labs micros\PostLab06.X\PostLab06.s
+A9 CODE ABS >149:C:\Users\Personal\Desktop\Labs micros\PostLab06.X\PostLab06.s
+AA CODE ABS >149:C:\Users\Personal\Desktop\Labs micros\PostLab06.X\PostLab06.s
+AB CODE ABS >150:C:\Users\Personal\Desktop\Labs micros\PostLab06.X\PostLab06.s
+AC CODE ABS >153:C:\Users\Personal\Desktop\Labs micros\PostLab06.X\PostLab06.s
+AE CODE ABS >154:C:\Users\Personal\Desktop\Labs micros\PostLab06.X\PostLab06.s
+AF CODE ABS >155:C:\Users\Personal\Desktop\Labs micros\PostLab06.X\PostLab06.s
+B0 CODE ABS >156:C:\Users\Personal\Desktop\Labs micros\PostLab06.X\PostLab06.s
+B1 CODE ABS >157:C:\Users\Personal\Desktop\Labs micros\PostLab06.X\PostLab06.s
+B2 CODE ABS >158:C:\Users\Personal\Desktop\Labs micros\PostLab06.X\PostLab06.s
+B3 CODE ABS >159:C:\Users\Personal\Desktop\Labs micros\PostLab06.X\PostLab06.s
+B4 CODE ABS >160:C:\Users\Personal\Desktop\Labs micros\PostLab06.X\PostLab06.s
+B5 CODE ABS >160:C:\Users\Personal\Desktop\Labs micros\PostLab06.X\PostLab06.s
+B6 CODE ABS >160:C:\Users\Personal\Desktop\Labs micros\PostLab06.X\PostLab06.s
+B7 CODE ABS >160:C:\Users\Personal\Desktop\Labs micros\PostLab06.X\PostLab06.s
+B8 CODE ABS >160:C:\Users\Personal\Desktop\Labs micros\PostLab06.X\PostLab06.s
+B9 CODE ABS >161:C:\Users\Personal\Desktop\Labs micros\PostLab06.X\PostLab06.s
+BA CODE ABS >164:C:\Users\Personal\Desktop\Labs micros\PostLab06.X\PostLab06.s
+BC CODE ABS >165:C:\Users\Personal\Desktop\Labs micros\PostLab06.X\PostLab06.s
+BD CODE ABS >166:C:\Users\Personal\Desktop\Labs micros\PostLab06.X\PostLab06.s
+BF CODE ABS >167:C:\Users\Personal\Desktop\Labs micros\PostLab06.X\PostLab06.s
+C0 CODE ABS >168:C:\Users\Personal\Desktop\Labs micros\PostLab06.X\PostLab06.s
+C1 CODE ABS >169:C:\Users\Personal\Desktop\Labs micros\PostLab06.X\PostLab06.s
+C2 CODE ABS >170:C:\Users\Personal\Desktop\Labs micros\PostLab06.X\PostLab06.s
+C3 CODE ABS >171:C:\Users\Personal\Desktop\Labs micros\PostLab06.X\PostLab06.s
+C4 CODE ABS >172:C:\Users\Personal\Desktop\Labs micros\PostLab06.X\PostLab06.s
+C5 CODE ABS >175:C:\Users\Personal\Desktop\Labs micros\PostLab06.X\PostLab06.s
+C6 CODE ABS >176:C:\Users\Personal\Desktop\Labs micros\PostLab06.X\PostLab06.s
+C7 CODE ABS >177:C:\Users\Personal\Desktop\Labs micros\PostLab06.X\PostLab06.s
+C8 CODE ABS >178:C:\Users\Personal\Desktop\Labs micros\PostLab06.X\PostLab06.s
+C9 CODE ABS >179:C:\Users\Personal\Desktop\Labs micros\PostLab06.X\PostLab06.s
+CA CODE ABS >180:C:\Users\Personal\Desktop\Labs micros\PostLab06.X\PostLab06.s
+CB CODE ABS >181:C:\Users\Personal\Desktop\Labs micros\PostLab06.X\PostLab06.s
+CC CODE ABS >182:C:\Users\Personal\Desktop\Labs micros\PostLab06.X\PostLab06.s
+CD CODE ABS >185:C:\Users\Personal\Desktop\Labs micros\PostLab06.X\PostLab06.s
+CE CODE ABS >186:C:\Users\Personal\Desktop\Labs micros\PostLab06.X\PostLab06.s
+CF CODE ABS >187:C:\Users\Personal\Desktop\Labs micros\PostLab06.X\PostLab06.s
+D0 CODE ABS >188:C:\Users\Personal\Desktop\Labs micros\PostLab06.X\PostLab06.s
+D1 CODE ABS >189:C:\Users\Personal\Desktop\Labs micros\PostLab06.X\PostLab06.s
+D2 CODE ABS >190:C:\Users\Personal\Desktop\Labs micros\PostLab06.X\PostLab06.s
+D3 CODE ABS >191:C:\Users\Personal\Desktop\Labs micros\PostLab06.X\PostLab06.s
+D4 CODE ABS >194:C:\Users\Personal\Desktop\Labs micros\PostLab06.X\PostLab06.s
+D5 CODE ABS >195:C:\Users\Personal\Desktop\Labs micros\PostLab06.X\PostLab06.s
+D6 CODE ABS >196:C:\Users\Personal\Desktop\Labs micros\PostLab06.X\PostLab06.s
+D7 CODE ABS >197:C:\Users\Personal\Desktop\Labs micros\PostLab06.X\PostLab06.s
+D8 CODE ABS >200:C:\Users\Personal\Desktop\Labs micros\PostLab06.X\PostLab06.s
+D9 CODE ABS >201:C:\Users\Personal\Desktop\Labs micros\PostLab06.X\PostLab06.s
+DA CODE ABS >202:C:\Users\Personal\Desktop\Labs micros\PostLab06.X\PostLab06.s
+DB CODE ABS >203:C:\Users\Personal\Desktop\Labs micros\PostLab06.X\PostLab06.s
+DC CODE ABS >204:C:\Users\Personal\Desktop\Labs micros\PostLab06.X\PostLab06.s
+DD CODE ABS >207:C:\Users\Personal\Desktop\Labs micros\PostLab06.X\PostLab06.s
+DE CODE ABS >208:C:\Users\Personal\Desktop\Labs micros\PostLab06.X\PostLab06.s
+DF CODE ABS >209:C:\Users\Personal\Desktop\Labs micros\PostLab06.X\PostLab06.s
+E0 CODE ABS >210:C:\Users\Personal\Desktop\Labs micros\PostLab06.X\PostLab06.s
+E1 CODE ABS >211:C:\Users\Personal\Desktop\Labs micros\PostLab06.X\PostLab06.s
+E2 CODE ABS >214:C:\Users\Personal\Desktop\Labs micros\PostLab06.X\PostLab06.s
+200 CODE ABS >216:C:\Users\Personal\Desktop\Labs micros\PostLab06.X\PostLab06.s
+201 CODE ABS >217:C:\Users\Personal\Desktop\Labs micros\PostLab06.X\PostLab06.s
+202 CODE ABS >218:C:\Users\Personal\Desktop\Labs micros\PostLab06.X\PostLab06.s
+203 CODE ABS >219:C:\Users\Personal\Desktop\Labs micros\PostLab06.X\PostLab06.s
+204 CODE ABS >220:C:\Users\Personal\Desktop\Labs micros\PostLab06.X\PostLab06.s
+205 CODE ABS >221:C:\Users\Personal\Desktop\Labs micros\PostLab06.X\PostLab06.s
+206 CODE ABS >222:C:\Users\Personal\Desktop\Labs micros\PostLab06.X\PostLab06.s
+207 CODE ABS >223:C:\Users\Personal\Desktop\Labs micros\PostLab06.X\PostLab06.s
+208 CODE ABS >224:C:\Users\Personal\Desktop\Labs micros\PostLab06.X\PostLab06.s
+209 CODE ABS >225:C:\Users\Personal\Desktop\Labs micros\PostLab06.X\PostLab06.s
+20A CODE ABS >226:C:\Users\Personal\Desktop\Labs micros\PostLab06.X\PostLab06.s
+20B CODE ABS >227:C:\Users\Personal\Desktop\Labs micros\PostLab06.X\PostLab06.s
+20C CODE ABS >228:C:\Users\Personal\Desktop\Labs micros\PostLab06.X\PostLab06.s
+20D CODE ABS >229:C:\Users\Personal\Desktop\Labs micros\PostLab06.X\PostLab06.s
+20E CODE ABS >230:C:\Users\Personal\Desktop\Labs micros\PostLab06.X\PostLab06.s
+20F CODE ABS >231:C:\Users\Personal\Desktop\Labs micros\PostLab06.X\PostLab06.s
+210 CODE ABS >232:C:\Users\Personal\Desktop\Labs micros\PostLab06.X\PostLab06.s
+211 CODE ABS >233:C:\Users\Personal\Desktop\Labs micros\PostLab06.X\PostLab06.s
+212 CODE ABS >234:C:\Users\Personal\Desktop\Labs micros\PostLab06.X\PostLab06.s
+0 INTVECT CODE >71:C:\Users\Personal\Desktop\Labs micros\PostLab06.X\PostLab06.s
+4 INTVECT CODE >73:C:\Users\Personal\Desktop\Labs micros\PostLab06.X\PostLab06.s
+5 INTVECT CODE >74:C:\Users\Personal\Desktop\Labs micros\PostLab06.X\PostLab06.s
+6 INTVECT CODE >75:C:\Users\Personal\Desktop\Labs micros\PostLab06.X\PostLab06.s
+7 INTVECT CODE >78:C:\Users\Personal\Desktop\Labs micros\PostLab06.X\PostLab06.s
+8 INTVECT CODE >79:C:\Users\Personal\Desktop\Labs micros\PostLab06.X\PostLab06.s
+9 INTVECT CODE >80:C:\Users\Personal\Desktop\Labs micros\PostLab06.X\PostLab06.s
+A INTVECT CODE >81:C:\Users\Personal\Desktop\Labs micros\PostLab06.X\PostLab06.s
+B INTVECT CODE >84:C:\Users\Personal\Desktop\Labs micros\PostLab06.X\PostLab06.s
+C INTVECT CODE >85:C:\Users\Personal\Desktop\Labs micros\PostLab06.X\PostLab06.s
+D INTVECT CODE >86:C:\Users\Personal\Desktop\Labs micros\PostLab06.X\PostLab06.s
+E INTVECT CODE >87:C:\Users\Personal\Desktop\Labs micros\PostLab06.X\PostLab06.s
+F INTVECT CODE >88:C:\Users\Personal\Desktop\Labs micros\PostLab06.X\PostLab06.s
+10 INTVECT CODE >92:C:\Users\Personal\Desktop\Labs micros\PostLab06.X\PostLab06.s
+12 INTVECT CODE >92:C:\Users\Personal\Desktop\Labs micros\PostLab06.X\PostLab06.s
+13 INTVECT CODE >92:C:\Users\Personal\Desktop\Labs micros\PostLab06.X\PostLab06.s
+14 INTVECT CODE >92:C:\Users\Personal\Desktop\Labs micros\PostLab06.X\PostLab06.s
+15 INTVECT CODE >93:C:\Users\Personal\Desktop\Labs micros\PostLab06.X\PostLab06.s
+16 INTVECT CODE >94:C:\Users\Personal\Desktop\Labs micros\PostLab06.X\PostLab06.s
+17 INTVECT CODE >97:C:\Users\Personal\Desktop\Labs micros\PostLab06.X\PostLab06.s
+18 INTVECT CODE >97:C:\Users\Personal\Desktop\Labs micros\PostLab06.X\PostLab06.s
+19 INTVECT CODE >97:C:\Users\Personal\Desktop\Labs micros\PostLab06.X\PostLab06.s
+1A INTVECT CODE >97:C:\Users\Personal\Desktop\Labs micros\PostLab06.X\PostLab06.s
+1B INTVECT CODE >97:C:\Users\Personal\Desktop\Labs micros\PostLab06.X\PostLab06.s
+1C INTVECT CODE >98:C:\Users\Personal\Desktop\Labs micros\PostLab06.X\PostLab06.s
+1D INTVECT CODE >99:C:\Users\Personal\Desktop\Labs micros\PostLab06.X\PostLab06.s
+0 RESVECT CODE >64:C:\Users\Personal\Desktop\Labs micros\PostLab06.X\PostLab06.s
+0 RESVECT CODE >66:C:\Users\Personal\Desktop\Labs micros\PostLab06.X\PostLab06.s
+2 RESVECT CODE >67:C:\Users\Personal\Desktop\Labs micros\PostLab06.X\PostLab06.s
+# %SYMTAB Section
+# An enumeration of all symbols in the program.
+# The beginning of the section is indicated by %SYMTAB.
+# Each line describes a single symbol as follows:
+#    <label> <value> [-]<load-adj> <class> <space> <psect> <file-name>
+# The value and load-adj are both in unqualified hexadecimal.
+# All other numeric values are in decimal.  The load-adj is the
+# quantity one needs to add to the symbol value in order to obtain the load
+# address of the symbol.  This value may be signed. If the symbol
+# was defined in a psect then <psect> will be "-". File-name
+# is the name of the object file in which the symbol was defined.
+%SYMTAB
+__Hspace_0 213 0 ABS 0 - -
+__Hspace_1 72 0 ABS 0 - -
+__Hspace_3 0 0 ABS 0 - -
+__Hspace_4 4010 0 ABS 0 - -
+__Hudata_bank0 0 0 ABS 0 udata_bank0 -
+__Hudata_bank1 0 0 ABS 0 udata_bank1 -
+__Hudata_bank2 0 0 ABS 0 udata_bank2 -
+__Hudata_bank3 0 0 ABS 0 udata_bank3 -
+__HINTVECT 0 0 ABS 0 INTVECT -
+__LRESVECT 0 0 ABS 0 RESVECT -
+__Hedata 0 0 ABS 0 edata -
+__Hudata 0 0 ABS 0 udata -
+__Hconfig 4012 0 CONFIG 4 config -
+__Ledata 0 0 ABS 0 edata -
+__Ludata 0 0 ABS 0 udata -
+__HCODE 426 0 ABS 0 CODE -
+__Hcode 0 0 ABS 0 code -
+__Hdata 0 0 ABS 0 data -
+__LCODE 0 0 ABS 0 CODE -
+__Lcode 0 0 ABS 0 code -
+__Ldata 0 0 ABS 0 data -
+__S0 0 0 ABS 0 - -
+__S1 72 0 ABS 0 - -
+__S3 0 0 ABS 0 - -
+__Lconfig 0 0 CONFIG 4 config -
+__HRESVECT 0 0 ABS 0 RESVECT -
+__Lspace_0 0 0 ABS 0 - -
+__Lspace_1 0 0 ABS 0 - -
+__Lspace_3 0 0 ABS 0 - -
+__Lspace_4 0 0 ABS 0 - -
+__LINTVECT 0 0 ABS 0 INTVECT -
+__Ludata_bank0 0 0 ABS 0 udata_bank0 -
+__Ludata_bank1 0 0 ABS 0 udata_bank1 -
+__Ludata_bank2 0 0 ABS 0 udata_bank2 -
+__Ludata_bank3 0 0 ABS 0 udata_bank3 -
+__Hudata_shr 0 0 ABS 0 udata_shr -
+__Ludata_shr 0 0 ABS 0 udata_shr -
+# %SPLITSTAB Section
+# This section enumerates all the psect splits performed by the assembler.
+# The beginning of the section is indicated by %SPLITSTAB.
+# Each line is a record a particular split, where the parent psect is on
+# the left and the child on the right.  Note that a child psect is always
+# split form the top of the parent psect. All splits from a given parent
+# are listed in the order in which they occurred.
+%SPLITSTAB
+# %DABS Section
+# This section contains a table of all usuage of the assember
+# directive DABS in the program. Each line has the following format:
+#   <name> <space> <address> <size>
+# If the DABS was originally labelled then that shall be <name>,
+# otherwise name will be "-".  The <space> number is in decimal.
+# <address> and <size> are in byte units as unqaulified hexadecimal
+%DABS
+# %SEGMENTS Section
+# This sections enumerates the segments of the program.  Each segment
+# is described on a single line as follows:
+#    <name> <space> <link address> <file address> <size> <delta>
+# Addresses and size are in unqualified hexadecimal.  The link address
+# and size are in units of delta. The file address is in units of bytes.
+# All other numeric quantities are in decimal.
+%SEGMENTS
+udata_bank0 1 20 20 6 1
+udata_shr 1 70 70 2 1
+# %NOTES Section
+# This section contains data of all the note-psects.  The beginning of the section
+# is indicated by %NOTES. The first line indicates the name and decimal
+# byte-length of the first note-psect, e.g.
+#   $codecov_info_hdr 16
+# Each line that follows contains the byte-data of the psect in hexadecimal as a
+# space-separated list. These lines are limited to 16 bytes of data.
+%NOTES
